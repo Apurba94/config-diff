@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "config-diff"
+version = "0.1.0"
+description = "Semantic diff of experiment configuration files (JSON, INI, TOML) with nested key paths."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+config-diff = "config_diff.cli:main"
+
+[tool.setuptools]
+packages = ["config_diff"]
